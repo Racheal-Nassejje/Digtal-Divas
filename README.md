@@ -74,3 +74,21 @@ Digtal-Divas/
 - index.html links to menu.html and order.html
 - style.css styles all pages
 - script.js makes all pages interactive.
+- CSS Styling (style.css)
+
+The style.css file controls the visual design of the website.
+It includes:
+
+Website color scheme
+Font styling
+Navigation bar styling
+Card layout for menu items
+Order form styling
+Button hover effects
+Footer styling
+
+The pages are linked together as follows:
+index.html → menu.html
+index.html → order.html
+menu.html → order.html
+The style.css file applies styling across all pages, while script.js provides interactive features.
