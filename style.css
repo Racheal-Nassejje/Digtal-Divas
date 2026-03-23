@@ -1,0 +1,40 @@
+css id="base-style"
+
+body {
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    background-color: #fff8f0; 
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #7d5a50;
+    transition: color o.3s ease;
+}
+
+a:hover {
+    color: #c08060;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-weight: 600;
+    color: #5a3e36 
+}
+
+p {
+    imag {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* container for content spacing */
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px 0;
+    }
+}
