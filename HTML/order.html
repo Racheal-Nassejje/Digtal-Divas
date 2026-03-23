@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order — Digital Divas Restaurant</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+    <div class="logo">
+    <div class="logo-icon">
+        🍴<span>DD</span>🥄
+    </div>
+    <div class="logo-text">
+        <span class="logo-name">DIGITAL DIVAS</span>
+        <span class="logo-tagline">
+            ✦ RESTAURANT & ORDERING ✦
+        </span>
+    </div>
+</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order.html">Order</a></li>
+        </ul>
+    </nav>
+
+    <!-- Order Section -->
+    <section class="order">
+        <h2>Place Your Order</h2><br>
+        <p>Fill in the form below to place your order!</p><br>
+
+        <form id="orderForm">
+
+            <!-- Customer Name -->
+            <label>Customer Name:</label><br><br>
+            <input type="text" id="name" 
+            placeholder="Enter your name"><br><br>
+
+            <!-- Phone Number -->
+            <label>Phone Number:</label><br><br>
+            <input type="tel" id="phone" 
+            placeholder="Enter your phone number"><br><br>
+
+            <!-- Select Food Item -->
+            <label>Select Food Item:</label><br><br>
+            <select id="food">
+                <option value="">-- Select Food --</option><br><br><br>
+
+                <!-- Ugandan Main Foods -->
+                <optgroup label="🍛 Main Foods">
+                    <option value="Matoke" data-price="8000">
+                        Matoke - UGX 8,000</option>
+                    <option value="Posho and Beans" data-price="5000">
+                        Posho and Beans - UGX 5,000</option>
+                    <option value="Rolex" data-price="4000">
+                        Rolex - UGX 4,000</option>
+                    <option value="Groundnut Stew" data-price="9000">
+                        Groundnut Stew - UGX 9,000</option>
+                    <option value="Luwombo" data-price="15000">
+                        Luwombo - UGX 15,000</option>
+                    <option value="Katogo" data-price="6000">
+                        Katogo - UGX 6,000</option>
+                    <option value="Matooke and Meat" data-price="12000">
+                        Matooke and Meat - UGX 12,000</option>
+                </optgroup>
+
+                <!-- Drinks -->
+                <optgroup label="🥤 Drinks">
+                    <option value="Passion Juice" data-price="3000">
+                        Passion Juice - UGX 3,000</option>
+                    <option value="Mango Juice" data-price="3000">
+                        Mango Juice - UGX 3,000</option>
+                    <option value="Orange Juice" data-price="3000">
+                        Orange Juice - UGX 3,000</option>
+                    <option value="Cocktail" data-price="10000">
+                        Cocktail - UGX 10,000</option>
+                    <option value="Soda" data-price="2000">
+                        Soda - UGX 2,000</option>
+                    <option value="Water" data-price="1000">
+                        Water - UGX 1,000</option>
+                </optgroup>
+
+            </select><br>
+
+            <!-- Quantity -->
+            <label>Quantity:</label><br><br>
+            <input type="number" id="quantity" 
+            placeholder="Enter quantity" min="1"><br><br>
+
+            <!-- Submit Button -->
+            <button type="button" 
+            onclick="confirmOrder()">Place Order</button>
+
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Digital Divas Restaurant. 
+        All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
