@@ -1,0 +1,245 @@
+* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+/* Logo Styles */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    width: 120px;
+    height: 120px;
+    background-color: #FFD700;
+    border-radius: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #8B0000;
+    border: 2px solid #FFD700;
+    
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.logo-name {
+    color: #FFD700;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.logo-tagline {
+    color: white;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #8B0000;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* Hello Section */
+.hero {
+    background-color: #8B0000;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h3 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* Button */
+/* Button */
+.btn {
+    display: inline-block;
+    background-color: transparent;
+    color: #FFD700;
+    border: 2px solid #FFD700;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background-color: #FFD700;
+    color: #8B0000;
+}
+/* Filter Buttons */
+.filter-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.filter-buttons button {
+    background-color: #8B0000;
+    color: #FFD700;
+    border: 2px solid #FFD700;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter-buttons button:hover {
+    background-color: #FFD700;
+    color: #8B0000;
+}
+
+/* Menu Items Grid */
+.menu-items { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px;
+    align-items: stretch;
+}
+
+/* Menu Card */
+.menu-item {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: 1px solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-item .btn {
+    margin-top: auto;
+}
+
+.menu-item h3 {
+    font-size: 20px;
+    color: #8B0000;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.menu-item .price {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #8B0000;
+    margin-bottom: 15px;
+}
+
+/* Menu Header */
+.menu-header {
+    background-color: #8B0000;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.menu-header h1 {
+    font-size: 36px;
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+
+.menu-header p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* About Section */
+.about {
+    padding: 60px 30px;
+    text-align: center;
+    background-color: white;
+}
+
+.about h4 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #8B0000;
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    background-color: #8B0000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
