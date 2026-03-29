@@ -237,9 +237,159 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
+    /* Contact Section */
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 60px 30px;
     background-color: #8B0000;
-    color: white;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+
+/* All Three Boxes */
+.contact-info,
+.rate-us,
+.feedback-form {
+    flex: 1;
+    background-color: #8B0000;
+    padding: 25px;
+    border-radius: 20px;
+    border: 2px solid #FFD700;
+}
+
+/* All Headings */
+.contact-info h2,
+.rate-us h2,
+.feedback-form h2 {
+    color: #FFD700;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Contact Info Text */
+.contact-info p,strong {
+    background-color: #8B0000;
+    color: #FFD700;
+    font-size: 15px;
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+
+/* Social Media */
+.social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.social-media a {
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: 1px solid #FFD700;
+    border-radius: 20px;
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    transition: 0.3s;
+}
+
+.social-media a:hover {
+    background-color: #FFD700;
+    color: #8B0000;
+}
+
+/* Rate Us Select */
+.rate-us {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #FFD700;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: #8B0000;
+    color: #FFD700;
+    text-align: center;
+}
+
+/* Stars */
+.stars span {
+    cursor: pointer;
+    font-size: 18px;
+    display: block;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.stars span:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+
+#rating-message {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Feedback Form */
+.feedack-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    padding: 12px;
+    border: 1px solid #FFD700;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: #8B0000;
+    color: #FFD700;
+    width: 100%;
+}
+
+.feedback-form input::placeholder,
+.feedback-form textarea::placeholder {
+    color: #FFD700;
+}
+
+.feedback-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.feedback-form button {
+    background-color: #8B0000; 
+    color: #FFD700;
+    padding: 12px;
+    border: 1px solid #FFD700;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.feedback-form button:hover {
+    background-color: #FFD700;
+    color: #8B0000;
+}
+
+/* Map Section */
+.map {
+    padding: 40px 30px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.map h2 {
+    color: #8B0000;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
 }
