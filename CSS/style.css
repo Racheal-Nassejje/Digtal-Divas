@@ -164,7 +164,7 @@ nav ul li a:hover {
 /* Menu Card */
 .menu-item {
     background-color: white;
-    border-radius: 15px;
+    border-radius: 20px;
     padding: 15px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -172,36 +172,51 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 250px;
+    min-height: 420px;
     box-sizing: border-box;
     overflow: hidden;
+    
+}
+
+/* Menu Item Images */
+.menu-item img {
+    width: 120%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 10px;
+    margin-left: -10%;
+    margin-right: -10%;
+    flex-shrink: 10px;
+    
 }
 
 .menu-item .btn {
-    margin-top: auto;
+    margin: 10px 15px 15px;
     display: block;
-    width: 100%;
+    
+    
 }
 
 .menu-item h3 {
     font-size: 20px;
     color: #8B0000;
-    margin-bottom: 10px;
+    padding: 10px 15px 0 15px;
 }
 
 .menu-item p {
     font-size: 14px;
     color: #666;
-    margin-bottom: 10px;
-    line-height: 1.5;
+    padding: 0px 15px;
 }
 
 .menu-item .price {
-    display: block;
+    
     font-size: 16px;
     font-weight: bold;
     color: #8B0000;
-    margin-bottom: 15px;
+    padding: 15px 15px;
 }
 
 /* Menu Header */
