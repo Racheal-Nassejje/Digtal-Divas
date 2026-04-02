@@ -169,10 +169,13 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-height: 250px;
 }
 
 .menu-item .btn {
     margin-top: auto;
+    display: block;
+    width: 100%;
 }
 
 .menu-item h3 {
@@ -215,6 +218,73 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
+/* Menu Page Contact Section */
+.menu-contact {
+    background-color: #8B0000;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.menu-contact div {
+    text-align: center;
+    flex: 1;
+}
+
+.menu-contact h2 {
+    color: #FFD700;
+    font-size: 22px;
+}
+
+.menu-contact p {
+    color: white;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.menu-contact strong {
+    color: #FFD700;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #8B0000;
+    color: #FFD700;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: none;
+    font-size: 14px;
+    font-weight: bold;
+    clear: both;
+    display: block;
+}
+   
+/* Styling the Labels (Phone, Email, Location) */
+.menu-contact strong {
+    color: #FFD700; 
+    
+}
+
+/* Footer Copyright Styling */
+footer > p:last-of-type {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #8B0000;
+    color: #FFD700;
+    box-sizing: border-box;
+    border-top: 1px solid #FFD700;
+    
+    
+}
 /* About Section */
 .about {
     padding: 60px 30px;
