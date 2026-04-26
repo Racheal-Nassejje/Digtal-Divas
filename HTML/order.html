@@ -46,57 +46,205 @@
             placeholder="Enter your phone number"><br><br>
 
             <!-- Select Food Item -->
-            <label>Select Food Item:</label><br><br>
-            <select id="food">
-                <option value="">-- Select Food --</option><br><br><br>
+             <label>Select Food Item</label>
+             <select id="food">
+                <option value="">Select Food</option>
 
-                <!-- Main Foods -->
-                <optgroup label="Main Foods">
-                    <option value="Matoke" data-price="8000">
-                        Matoke - UGX 8,000</option>
-                    <option value="Posho and Beans" data-price="5000">
-                        Posho and Beans - UGX 5,000</option>
-                    <option value="Rolex" data-price="4000">
-                        Rolex - UGX 4,000</option>
-                    <option value="Groundnut Stew" data-price="9000">
-                        Groundnut Stew - UGX 9,000</option>
-                    <option value="Luwombo" data-price="15000">
-                        Luwombo - UGX 15,000</option>
-                    <option value="Katogo" data-price="6000">
-                        Katogo - UGX 6,000</option>
-                    <option value="Matooke and Meat" data-price="12000">
-                        Matooke and Meat - UGX 12,000</option>
-                </optgroup>
 
-                <!-- Drinks -->
-                <optgroup label="🥤 Drinks">
-                    <option value="Passion Juice" data-price="3000">
-                        Passion Juice - UGX 3,000</option>
-                    <option value="Mango Juice" data-price="3000">
-                        Mango Juice - UGX 3,000</option>
-                    <option value="Orange Juice" data-price="3000">
-                        Orange Juice - UGX 3,000</option>
-                    <option value="Cocktail" data-price="10000">
-                        Cocktail - UGX 10,000</option>
-                    <option value="Soda" data-price="2000">
-                        Soda - UGX 2,000</option>
-                    <option value="Water" data-price="1000">
-                        Water - UGX 1,000</option>
-                </optgroup>
 
-            </select><br>
+    <!-- Main Foods -->
+    <optgroup label=" Main Foods">
+        <option value="Mattooke and Beef" data-price="30000">
+            Mattooke and Beef - UGX 30,000</option>
+        <option value="Mattooke and Groundnuts" data-price="30000">
+            Mattooke and Groundnuts - UGX 30,000</option>
+        <option value="Rolex" data-price="10000">
+            Rolex - UGX 10,000</option>
+        <option value="Chicken Pillao" data-price="30000">
+            Chicken Pillao - UGX 30,000</option>
+        <option value="Beef Luwombo" data-price="30000">
+            Beef Luwombo - UGX 30,000</option>
+        <option value="Akaro and Chicken" data-price="30000">
+            Akaro and Chicken - UGX 30,000</option>
+        <option value="A Massive Lusaniya" data-price="100000">
+            A Massive Lusaniya - UGX 100,000</option>
+        <option value="Mattooke and Dry Fish" data-price="30000">
+            Mattooke and Dry Fish - UGX 30,000</option>
+        <option value="Rice and Fresh Fish" data-price="30000">
+            Rice and Fresh Fish - UGX 30,000</option>
+    </optgroup>
+
+    <!-- Drinks -->
+    <optgroup label=  "Drinks">
+        <option value="Passion Juice" data-price="3000">
+            Passion Juice - UGX 3,000</option>
+        <option value="Mango Juice" data-price="3000">
+            Mango Juice - UGX 3,000</option>
+        <option value="Orange Juice" data-price="3000">
+            Orange Juice - UGX 3,000</option>
+        <option value="Cocktail" data-price="10000">
+            Cocktail - UGX 10,000</option>
+        <option value="Soda" data-price="2000">
+            Soda - UGX 2,000</option>
+        <option value="Smoothies" data-price="5000">
+            Smoothies - UGX 5,000</option>
+        <option value="Water" data-price="1000">
+            Water - UGX 1,000</option>
+        <option value="Avocado Juice" data-price="3000">
+            Avocado Juice - UGX 3,000</option>
+        <option value="Beetroot Juice" data-price="3000">
+            Beetroot Juice - UGX 3,000</option>
+    </optgroup>
+
+    <!-- Desserts -->
+    <optgroup label="Desserts">
+        <option value="Mandazi" data-price="2000">
+            Mandazi - UGX 2,000</option>
+        <option value="Banana Bread" data-price="5000">
+            Banana Bread - UGX 5,000</option>
+        <option value="Sandwich" data-price="10000">
+            Sandwich - UGX 10,000</option>
+        <option value="Cake" data-price="8000">
+            Cake - UGX 8,000</option>
+        <option value="Fresh Pineapple" data-price="3000">
+            Fresh Pineapple - UGX 3,000</option>
+        <option value="Ice Cream" data-price="10000">
+            Ice Cream - UGX 10,000</option>
+        <option value="Strawberries" data-price="10000">
+            Strawberries - UGX 10,000</option>
+        <option value="Fried Plantain" data-price="10000">
+            Fried Plantain - UGX 10,000</option>
+    </optgroup>
+</select>
 
             <!-- Quantity -->
             <label>Quantity:</label><br><br>
             <input type="number" id="quantity" 
             placeholder="Enter quantity" min="1"><br><br>
 
+    <!-- Payment Method -->
+<label>Select Payment Method:</label>
+<div class="payment-methods">
+    <div class="payment-option">
+        <input type="radio" 
+        name="payment" 
+        id="visa" 
+        value="Visa/Mastercard">
+        <label for="visa">
+         Visa/Mastercard</label>
+    </div>
+
+    <div class="payment-option">
+        <input type="radio" 
+        name="payment" 
+        id="mtn" 
+        value="MTN Mobile Money">
+        <label for="mtn">
+         MTN Mobile Money</label>
+    </div>
+
+    <div class="payment-option">
+        <input type="radio" 
+        name="payment" 
+        id="airtel" 
+        value="Airtel Money">
+        <label for="airtel">
+         Airtel Money</label>
+    </div>
+
+    <div class="payment-option">
+        <input type="radio" 
+        name="payment" 
+        id="cash" 
+        value="Cash on Delivery">
+        <label for="cash">
+         Cash on Delivery</label>
+    </div>
+</div>
+
+
+
             <!-- Submit Button -->
             <button type="button" 
             onclick="confirmOrder()">Place Order</button>
+    
+        <!-- Order Tracking Section -->
+<section class="order-tracking">
+    <h2>Track Your Order </h2>
+    <p>Enter your phone number to track your order!</p>
+
+    <div class="tracking-form">
+        <label>Enter Phone Number:</label>
+        <input type="tel" id="trackPhone" 
+        placeholder="Enter your phone number">
+        <button onclick="trackOrder()">
+        Track Order </button>
+    </div>
+
+    <!-- Tracking Result -->
+    <div id="tracking-result" 
+    class="tracking-result" 
+    style="display:none;">
+
+        <h3>Order Status</h3>
+
+        <div class="tracking-steps">
+
+            <div class="step" id="step1">
+                <div class="step-icon">✅</div>
+                <div class="step-text">
+                    <strong>Order Placed</strong>
+                    <p>Your order has been received!</p>
+                </div>
+            </div>
+
+            <div class="step" id="step2">
+                <div class="step-icon">✅</div>
+                <div class="step-text">
+                    <strong>Order Confirmed</strong>
+                    <p>Restaurant confirmed your order!</p>
+                </div>
+            </div>
+
+            <div class="step" id="step3">
+                <div class="step-icon">🍳</div>
+                <div class="step-text">
+                    <strong>Being Prepared</strong>
+                    <p>Your food is being prepared!</p>
+                </div>
+            </div>
+
+            <div class="step" id="step4">
+                <div class="step-icon">🚗</div>
+                <div class="step-text">
+                    <strong>Out for Delivery</strong>
+                    <p>Your order is on the way!</p>
+                </div>
+            </div>
+
+            <div class="step" id="step5">
+                <div class="step-icon">🎉</div>
+                <div class="step-text">
+                    <strong>Delivered!</strong>
+                    <p>Enjoy your meal!</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 
         </form>
     </section>
+    <section class="menu-contact">
+    <h2>Contact Us 📞</h2>
+    <p><strong>Phone:</strong><br> +256 700 116 897 / +256 791 866 458</p><br>
+
+    <p><strong>Email:</strong><br> digitaldivas@gmail.com</p><br>
+
+    <p><strong>Location:</strong><br> Kampala, Uganda</p><br>
+</section>
 
     <!-- Footer -->
     <footer>
