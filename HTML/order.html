@@ -25,6 +25,7 @@
             <li><a href="../HTML/index.html">Home</a></li>
             <li><a href="../HTML/menu.html">Menu</a></li>
             <li><a href="../HTML/order.html">Order</a></li>
+            <li><a href="../HTML/about.html">About Us</a></li>
         </ul>
     </nav>
 
@@ -236,6 +237,41 @@
 
 
         </form>
+    <!-- Order Summary -->
+<div id="order-summary" class="order-summary" 
+style="display:none;">
+    <h3>📋 Order Summary</h3>
+    <table class="summary-table">
+        <tr>
+            <td><strong>Customer Name:</strong></td>
+            <td id="summary-name"></td>
+        </tr>
+        <tr>
+            <td><strong>Phone Number:</strong></td>
+            <td id="summary-phone"></td>
+        </tr>
+        <tr>
+            <td><strong>Food Item:</strong></td>
+            <td id="summary-food"></td>
+        </tr>
+        <tr>
+            <td><strong>Quantity:</strong></td>
+            <td id="summary-quantity"></td>
+        </tr>
+        <tr>
+            <td><strong>Payment Method:</strong></td>
+            <td id="summary-payment"></td>
+        </tr>
+        <tr class="total-row">
+            <td><strong>Total Amount:</strong></td>
+            <td id="summary-total"></td>
+        </tr>
+    </table>
+    <button onclick="confirmFinalOrder()">
+    ✅ Confirm Order</button>
+    <button onclick="cancelOrder()">
+    ❌ Cancel</button>
+</div>    
     </section>
     <section class="menu-contact">
     <h2>Contact Us 📞</h2>
