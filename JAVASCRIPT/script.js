@@ -63,6 +63,7 @@ function rateUs(rating) {
         `<strong style="color:#FFD700">${messages[rating]}</strong>`;
 }
 
+// Show Order Summary
 function confirmOrder() {
     const name = document.getElementById('name').value;
     const phone = document.getElementById('phone').value;
@@ -71,7 +72,7 @@ function confirmOrder() {
     const payment = document.querySelector(
         'input[name="payment"]:checked');
 
-    if (name === '' || phone === '' || 
+    if (name === '' || phone === '' ||
         food === '' || quantity === '') {
         alert('Please fill in all fields!');
         return false;
@@ -87,15 +88,43 @@ function confirmOrder() {
         .selectedIndex].dataset.price;
     const total = price * quantity;
 
-    alert(`Thank you ${name}! 
-Your order has been placed successfully!
-Food: ${quantity} x ${food}
-Payment: ${payment.value}
-Total: UGX ${Number(total).toLocaleString()}`);
+    // Show Order Summary
+    document.getElementById('summary-name')
+        .innerHTML = name;
+    document.getElementById('summary-phone')
+        .innerHTML = phone;
+    document.getElementById('summary-food')
+        .innerHTML = food;
+    document.getElementById('summary-quantity')
+        .innerHTML = quantity;
+    document.getElementById('summary-payment')
+        .innerHTML = payment.value;
+    document.getElementById('summary-total')
+        .innerHTML = 'UGX ' + 
+        Number(total).toLocaleString();
 
-    document.getElementById('orderForm').reset();
+    // Show summary box
+    document.getElementById('order-summary')
+        .style.display = 'block';
+
+    // Scroll to summary
+    document.getElementById('order-summary')
+        .scrollIntoView({behavior: 'smooth'});
 }
 
+// Confirm Final Order
+function confirmFinalOrder() {
+    alert(' Thank you! Your order has been placed successfully!');
+    document.getElementById('orderForm').reset();
+    document.getElementById('order-summary')
+        .style.display = 'none';
+}
+
+// Cancel Order
+function cancelOrder() {
+    document.getElementById('order-summary')
+        .style.display = 'none';
+}
 
 function trackOrder() {
     // Show the tracking result section
